@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>My Personal Website</title>
   </head>
   <body>
     <header>
-        <h1>Welcome to My Website!</h1>
+      <h1>Welcome to My Website!</h1>
     </header>
     <main>
-        <p>Hi, I'm Thisbe, and this is my personal website!</p>
+      <div id="walker"></div>
+      <p>Hi, I'm Thisbe, and this is my personal website!</p>
     </main>
     <footer>
-        <p>&copy; 2024 Thisbe Scholfield-Johnson</p>
+      <p>&copy; 2024 Thisbe Scholfield-Johnson</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+      // Select the walker element
+      const walker = document.getElementById("walker");
+      // Listen for the window resize event
+      window.addEventListener("resize", () => {
+        // Calculate a new horizontal position based on window width
+        const newPosition = Math.random() * window.innerWidth;
+        // Update the walker position
+        walker.style.transform = `translate(${newPosition}px, -50%)`;
+      });
+    </script>
   </body>
 </html>

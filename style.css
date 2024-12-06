@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background: #0078d7;
     color: white;
@@ -14,15 +16,30 @@ header {
     text-align: center;
 }
 
+/* Main Content */
 main {
     padding: 2em;
     max-width: 800px;
     margin: auto;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 1em 0;
     background: #333;
     color: white;
+}
+
+/* Animated Element */
+#walker {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%; /*Makes it a circle */
+    position: absolute; /*Allows precise positioning */
+    top: 50%; /*Starts in the middle of the screen */
+    left: 50%; /*Starts in the middle of the screen */
+    transform: translate(-50%, -50%); /*Adjusts position for true centering*/
+    transition: transform 0.5s ease-in-out; /*Smooth movement*/
 }
