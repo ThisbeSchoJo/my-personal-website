@@ -4,15 +4,37 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #FAF3E0;
+    color: #5D4037;
 }
-/* Header styles */
-header {
-    background: #0078d7;
+/* Header and Footer styles */
+header, footer {
+    background-color: #228B22;
     color: white;
-    padding: 2em 1em;
+    padding: 1em 0;
     text-align: center;
+}
+/* Dark Mode Stles */
+body.dark-mode {
+    background-color: #333;
+    color: #FFF;
+}
+header.dark-mode, footer.dark-mode {
+    background-color: #444;
+}
+button#mode-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+}
+button#mode-toggle:hover {
+    color: #fff;
+}
+/*Dark Mode Button Appearance */
+body.dark-mode button#mode-toggle {
+    color: #FFF;
 }
 header h1 {
     margin: 0;
@@ -24,9 +46,9 @@ header p {
 }
 /* Main content */
 main {
-    padding: 0 1em;
+    padding: 2em;
     max-width: 800px;
-    margin: 2em auto;
+    margin: auto;
 }
 section {
     margin-bottom: 2em;
@@ -105,12 +127,4 @@ a:hover {
 .project-grid p {
     margin-top: 0.5em;
     font-size: 1rem;
-}
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #333;
-    color: white;
-    font-size: 0.9rem;
 }
