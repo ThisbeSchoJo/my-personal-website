@@ -1,45 +1,64 @@
-/* Base Styles */
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
-
-/* Header Styles */
+/* Header styles */
 header {
     background: #0078d7;
     color: white;
-    padding: 1em 0;
+    padding: 2em 1em;
     text-align: center;
 }
-
-/* Main Content */
-main {
-    padding: 2em;
-    max-width: 800px;
-    margin: auto;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
-
-/* Footer Styles */
+header p {
+    margin-top:0.5em;
+    font-size: 1.2rem;
+}
+/* Main content */
+main {
+    padding: 0 1em;
+    max-width: 800px;
+    margin: 2em auto;
+}
+section {
+    margin-bottom: 2em;
+}
+section h2 {
+    font-size: 1.8rem;
+    color:#0078d7;
+    margin-bottom: 0.5em;
+}
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+ul {
+    padding-left: 1.5em;
+}
+li {
+    margin: 0.5em 0;
+}
+a {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Footer styles */
 footer {
     text-align: center;
     padding: 1em 0;
     background: #333;
     color: white;
-}
-
-/* Animated Element */
-#walker {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%; /*Makes it a circle */
-    position: absolute; /*Allows precise positioning */
-    top: 50%; /*Starts in the middle of the screen */
-    left: 50%; /*Starts in the middle of the screen */
-    transform: translate(-50%, -50%); /*Adjusts position for true centering*/
-    transition: transform 0.5s ease-in-out; /*Smooth movement*/
+    font-size: 0.9rem;
 }

@@ -2,32 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
+    <title>Thisbe Scholfield-Johnson</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to My Website!</h1>
+      <h1>Hello, I'm Thisbe!</h1>
+      <p>Welcome to my corner of the web.</p>
     </header>
     <main>
-      <div id="walker"></div>
-      <p>Hi, I'm Thisbe, and this is my personal website!</p>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I'm passionate about coding, science, and making the digital world a bit more interesting.
+                This site is a small showcase of my journey.
+            </p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Cool Project #1</a></li>
+                <li><a href="#">Cool Project #2</a></li>
+                <li><a href="#">Cool Project #3</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-      <p>&copy; 2024 Thisbe Scholfield-Johnson</p>
+      <p>&copy; 2024 Thisbe Scholfield-Johnson. Made with 💻 and ☕.</p>
     </footer>
     <script src="script.js"></script>
-    <script>
-      // Select the walker element
-      const walker = document.getElementById("walker");
-      // Listen for the window resize event
-      window.addEventListener("resize", () => {
-        // Calculate a new horizontal position based on window width
-        const newPosition = Math.random() * window.innerWidth;
-        // Update the walker position
-        walker.style.transform = `translate(${newPosition}px, -50%)`;
-      });
-    </script>
   </body>
 </html>

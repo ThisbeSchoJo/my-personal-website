@@ -1,3 +1,2 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by Javascript";
-document.querySelector("body").appendChild(h2);
+// Add a small console message to greet visitors
+console.log("Welcome to Thisbe's personal website!");
