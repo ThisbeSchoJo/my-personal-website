@@ -54,6 +54,19 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.social-icons {
+    margin-top: 1em;
+}
+.social-icons a {
+    color: #fff; 
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #0078d7; /* Change color on hover */
+}
 /* Footer styles */
 footer {
     text-align: center;
