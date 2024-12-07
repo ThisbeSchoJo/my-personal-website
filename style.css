@@ -83,11 +83,15 @@ body.dark-mode header, body.dark-mode footer {
 }
 /* Dark Mode Button */
 button#mode-toggle {
+    position: absolute;
+    top: 20px; /* Distance from the top of the screen */
+    right: 20px; /* Distance from the right of the screen */
     background-color: transparent; /* No background */
     border: none; /* Remove borders */
     font-size: 1.5em;
     color: inherit;
     cursor: pointer;
+    z-index: 10; /*ensures it appears above other content */
 }
 button#mode-toggle:hover {
     color: #fff;
