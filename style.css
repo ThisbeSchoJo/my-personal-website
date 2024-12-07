@@ -7,7 +7,9 @@ body {
     background-color: #ffffff;
     color: #000;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: url('./Images/arm_icon.png'), auto;
 }
+
 /* Header and Footer styles */
 header, footer {
     background-color: #333;
