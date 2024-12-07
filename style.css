@@ -174,11 +174,16 @@ a:hover {
     padding: 2em;
     background-color: #f9f9f9;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures grid layout */
+    gap: 1.5em;
+    max-width: 800px;
+    margin: auto;
 }
 #projects h2 {
     margin-bottom: 1em;
     font-size: 2rem;
-    color: #0078d7;
+    color: #6f6f6f;
 }
 .project-grid {
     display: grid;
