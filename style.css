@@ -263,3 +263,16 @@ a:hover {
 .inspiration-item a:hover h3 {
     color: #71ff39; /* Change color on hover */
 }
+body {
+    cursor: none;
+}
+#custom-cursor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('../my-personal-website/Images/arm_icon.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 1;
+}

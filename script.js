@@ -17,3 +17,20 @@ function toggleMode() {
 
 // Attach the function to the button's click event listener
 toggleButton.addEventListener("click", toggleMode);
+
+const cursor = document.createElement('div');
+cursor.id = "custom-cursor";
+document.body.appendChild(cursor);
+
+document.addEventListener('mousemove', (e) => {
+    const cursor = document.getElementById('custom-cursor');
+    console.log(`Cursor position: X=${e.pageX}, Y= ${e.pageY}`);
+    cursor.style.left = `${e.pageX - cursor.offsetWidth / 2}px`;
+    cursor.style.top = `${e.pageY - cursor.offsetHeight / 2}px`;
+});
+document.addEventListener('mouseenter', () => {
+    cursor.style.display = 'block';
+});
+document.addEventListener('mouseleave',() => {
+    cursor.style.display = 'none';
+});
