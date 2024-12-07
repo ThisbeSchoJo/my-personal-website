@@ -14,3 +14,6 @@ function toggleMode() {
         toggleButton.textContent = "🌙" //Change icon to moon (night mode)
     }    
 }
+
+// Attach the function to the button's click event listener
+toggleButton.addEventListener("click", toggleMode);

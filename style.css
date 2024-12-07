@@ -24,6 +24,16 @@ header p {
     margin-top:0.5em;
     font-size: 1.2rem;
 }
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes image circular */
+    object-fit: cover; /*Ensures image is cropped properly */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto 1em; /* Centers the image and adds spacing below it */
+    border: .5pc solid rgb(149, 144, 144); /* Adds border */
+}
 /* Main content */
 main {
     padding: 2em;
@@ -35,15 +45,15 @@ body.dark-mode {
     background-color: #111;
     color: #e0e0e0;
 }
-header.dark-mode, footer.dark-mode {
+body.dark-mode header, body.dark-mode footer {
     background-color: #444;
 }
 /* Dark Mode Button */
 button#mode-toggle {
-    background-color: transparent;
-    border: none;
+    background-color: transparent; /* No background */
+    border: none; /* Remove borders */
     font-size: 1.5em;
-    color: #333;
+    color: inherit;
     cursor: pointer;
 }
 button#mode-toggle:hover {
@@ -90,7 +100,7 @@ button#mode-toggle:hover {
     transition: color 0.3s ease;
 }
 .social-icons a:hover {
-    color: #0078d7; /* Change color on hover */
+    color: #71ff39; /* Change color on hover */
 }
 
 
@@ -100,7 +110,7 @@ section {
 }
 section h2 {
     font-size: 1.8rem;
-    color:#0078d7;
+    color:#6f6f6f;
     margin-bottom: 0.5em;
 }
 section p {
@@ -114,7 +124,7 @@ li {
     margin: 0.5em 0;
 }
 a {
-    color: #0078d7;
+    color: #6f6f6f;
     text-decoration: none;
     font-weight: bold;
 }
