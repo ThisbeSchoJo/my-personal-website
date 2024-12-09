@@ -301,3 +301,13 @@ body {
         border-color: transparent;
     }
 }
+
+/*Bookshelf Styles*/
+/*Goodreads Link Style*/
+.goodreads a:hover p{
+    color: #71ff39;
+}
+
+.goodreads a:hover {
+    color: #71ff39;
+}
