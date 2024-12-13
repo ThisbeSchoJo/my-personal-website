@@ -34,3 +34,31 @@ document.addEventListener('mouseenter', () => {
 document.addEventListener('mouseleave',() => {
     cursor.style.display = 'none';
 });
+
+//Navigation Bar//
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector('nav').innerHTML = data;
+    });
+
+//Book recommendation form//
+
+
+let inputValue = ''
+const formInput = document.getElementById('form-input')
+
+formInput.addEventListener('change', function(event){
+    inputValue = event.target.value
+})
+
+const form = document.getElementById('form')
+form.addEventListener('submit', function(event) {
+    event.preventDefault()
+    const li = document.createElement('li')
+    li.textContent = inputValue
+    const ul = document.getElementById('text-container')
+    ul.append(li)
+})
+
+
